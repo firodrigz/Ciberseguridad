@@ -1,0 +1,2 @@
+
+pdfinfo <pdf>
