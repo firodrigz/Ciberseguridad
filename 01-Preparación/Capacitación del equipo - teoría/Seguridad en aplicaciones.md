@@ -12,7 +12,7 @@ Realizar siempre **validación de entrada de datos** (evitar SQLi). Estos depend
 - Rango: Controla que los datos se encuentran dentro de un valor mínimo y un valor máximo
 - Dígito de control: Proporciona un cálculo adicional para generar un dígito de control para la detección de errores.
  
-![Dígito de control](https://i.postimg.cc/44DjKz4f/ddecontrol.png)
+![Dígito de control](https://i.postimg.cc/R0H5CBgF/ddcontrol.png)
 
 #### Controles de integridad
 
