@@ -19,3 +19,8 @@ Las ACL de salida filtran los paquetes después de que se enrutan, independiente
 
 #### Máscara Wildcard
 Es similar a la máscara de subred, solo que los 1 son 0 y los 0 son 1
+
+
+Las ACL son listas que especifican los permisos o derechos asignados a varios fideicomisarios sobre un recurso específico. Cada entrada en una ACL se llama Entrada de Control de Acceso (ACE, por sus siglas en inglés).
+
+- Las ACL pueden ser Discrecionales (DACL) que controlan el acceso al recurso y Sistémicas (SACL) que controlan la auditoría de accesos.
