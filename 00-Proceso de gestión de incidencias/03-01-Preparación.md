@@ -54,11 +54,11 @@ Muchas de las herramientas mencionadas anteriormente formarán parte de lo que s
 
 Permiten que los correos enviados lleguen al destino correctamente.
 
-SPF (Sender Politicy Framework): es un estándar de autentificación que vincula un nombre de dominio a una dirección de correo electrónico. Consiste en definir cuál es el remitente o remitentes autorizado para enviar emails con un dominio determinado. De este modo, los clientes de emails como Gmail o Outlook pueden comprobar que el email entrante procede de un host autorizado por el administrador del dominio desde el que se envía.
+**SPF (Sender Politicy Framework):** es un estándar de autentificación que vincula un nombre de dominio a una dirección de correo electrónico. Consiste en definir cuál es el remitente o remitentes autorizado para enviar emails con un dominio determinado. De este modo, los clientes de emails como Gmail o Outlook pueden comprobar que el email entrante procede de un host autorizado por el administrador del dominio desde el que se envía.
 
-DKIM (DomainKeys Identified Mail): es un protocolo de autentificación que vincula un nombre de dominio a un mensaje. El protocolo te permite firmar tu email con tu nombre de dominio. El objetivo del protocolo DKIM no es sólo demostrar que el nombre de dominio no ha sido usurpado, sino que también el mensaje no ha sido alterado durante la transmisión.
+**DKIM (DomainKeys Identified Mail):** es un protocolo de autentificación que vincula un nombre de dominio a un mensaje. El protocolo te permite firmar tu email con tu nombre de dominio. El objetivo del protocolo DKIM no es sólo demostrar que el nombre de dominio no ha sido usurpado, sino que también el mensaje no ha sido alterado durante la transmisión.
 
-DMARC (Domain-based Message Authentication, Reporting and Conformance): indica a los servidores receptores qué hacer con sus mensajes que no pasan SPF o DKIM
+**DMARC (Domain-based Message Authentication, Reporting and Conformance):** indica a los servidores receptores qué hacer con sus mensajes que no pasan SPF o DKIM
 Para pasar la autenticación DMARC, los mensajes deben autenticarse mediante SPF o DKIM, o ambos. El dominio de autenticación debe ser el mismo dominio que aparece en el encabezado del mensaje De:.
 
 ### EDR
