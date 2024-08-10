@@ -1,0 +1,3 @@
+### Estándar de seguridad de Datos de la Industria de Tarjetas de Pago (PCI DSS)
+
+ Es un conjunto de reglas contractuales que buscan proteger los datos de pago del titular de la tarjeta de pago durante una transacción y reducir el fraude. En teoría, el PCI DSS es un estándar voluntario. Sin embargo, en la práctica, cualquier organización que almacene, procese o transmita datos de titulares de tarjetas que no cumplan con el estándar PCI DSS puede enfrentar tarifas de transacción significativamente más altas, multas de hasta USD 500 000 y, en circunstancias extremas, perder la capacidad de procesar tarjetas de pago.
