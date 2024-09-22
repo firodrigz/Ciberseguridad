@@ -49,3 +49,4 @@ Arroja luz sobre las listas de control de acceso (ACL). La "S" en S
     - [Id. de evento 5157](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=5157) : Se registra cuando la plataforma de filtrado de Windows bloquea un intento de conexión. Esto puede ser útil para identificar el tráfico malicioso en la red.`The Windows Filtering Platform has blocked a connection)`
     - [Id. de evento 7045](https://www.ultimatewindowssecurity.com/securitylog/encyclopedia/event.aspx?eventid=7045) : Una aparición repentina de servicios desconocidos podría sugerir la instalación de malware, ya que muchos tipos de malware se instalan como servicios.`(A service was installed in the system)`
 
+![Eventos a Revisar](https://i.postimg.cc/mk52XXBX/eventosarevisare.png)
