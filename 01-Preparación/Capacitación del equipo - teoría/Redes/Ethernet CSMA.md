@@ -1,0 +1,2 @@
+
+CSMA/CA se enfoca en evitar que ocurran las colisiones antes de que sucedan, similar a esperar un turno para hablar en una reunión, mientras que CSMA/CD se enfoca en detectar las colisiones una vez que han ocurrido y gestionarlas adecuadamente, similar a detenerse y disculparse si se interrumpe a alguien durante una conversación.
