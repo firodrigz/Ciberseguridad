@@ -27,7 +27,11 @@ Se debe confirmar que el `from` desde donde recibimos el correo utilice los mism
 
 ### Ver contenido de links sin afectar navegador principal (Análisis dinámico)
 [Browserling – Online cross-browser testing](https://www.browserling.com/)
-
+[**AnyRun**](https://app.any.run/) **:** un servicio de análisis de malware interactivo, sandbox.
+[**VirusTotal**](https://www.virustotal.com/) **:** un servicio que analiza archivos y URL en busca de virus.
+[**URLHouse**](https://urlhaus.abuse.ch/) **:** una base de datos de URL maliciosas.
+[**URLScan**](https://urlscan.io/) **:** Una herramienta para escanear y analizar sitios web.
+[**HybridAnalysis**](https://www.hybrid-analysis.com/) **:** un servicio gratuito de análisis de malware.
 ### Analizar excels
 olevba `file`
 
