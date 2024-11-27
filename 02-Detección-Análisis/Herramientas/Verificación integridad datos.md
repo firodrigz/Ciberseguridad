@@ -4,6 +4,14 @@ hashes ->echo -n 'contenido de el fichero' | md5sum
 cifrado
  echo 'hash' | openssl aes-256-cdc -pbkdf2 -a -d
 
+HERRAMIENTAS
+
+criptomator -> [Cryptomator - Free & Open-Source Cloud Storage Encryption](https://cryptomator.org/) (encripta datos)
+
+En Windows:
+fciv
+
+En linux:
 echo "hash ./loqueinstale.exe" | sha256sum --check -
 
 #### En windows:
