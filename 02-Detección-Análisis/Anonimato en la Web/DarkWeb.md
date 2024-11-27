@@ -1,0 +1,3 @@
+**Dark Web** es un subconjunto mucho más pequeño de la Deep Web, que se accede principalmente a través de navegadores especializados como **Tor** o **I2P**. Este es el espacio donde se llevan a cabo muchas actividades ilegales, desde la venta de drogas y armas hasta la distribución de malware y credenciales robadas.
+
+La Dark Web se mantiene oculta utilizando tecnologías de encriptación avanzadas que protegen la identidad tanto de los usuarios como de los servidores. Este anonimato es lo que ha permitido que florezca como un mercado clandestino, atrayendo a ciberdelincuentes y otros actores maliciosos. Sin embargo, también es importante señalar que la Dark Web tiene usos legítimos, como la defensa de la privacidad o la libertad de expresión en regímenes opresivos.
