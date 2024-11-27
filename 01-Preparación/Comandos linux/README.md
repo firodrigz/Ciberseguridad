@@ -14,6 +14,13 @@ A continuación se enumaran los comandos más importantes que son de utilidad en
 - Crear directorio -> mkdir directorio
 - Crear directorio desde otra carpeta -> mkdir /home/directorio lo mismo para eliminar
 - Eliminar directorio -> rmdir directorio
+- tree .
+	├── info.txt
+	└── Storage
+	    └── local
+	        └── user
+	            ├── documents
+	            └── userinfo.txt
 
 ## ARCHIVOS
 - Crear un archivo -> touch archivo.txt / archivo.py /archivo.etc o sin el '.' y por default devuelve un txt.
@@ -31,11 +38,37 @@ A continuación se enumaran los comandos más importantes que son de utilidad en
 - Ver lista de los archivos y directorios dentro del directorio -> ls | ls -l 
 - Ver carpetas ocultas -> ls -la
 
+## MV
+``` bash
+mv <file/directory> <renamed file/directory>
+```
+
+``` bash
+mv information.txt readme.txt Storage/  -> MUEVE VARIOS ARCHIVOS A UN DIRECTORIO
+```
+
+## CP
+``` bash
+cp Storage/readme.txt Storage/local/ 
+```
+
 ## AGREGAR RUTA ABSOLUTA AL PATH
 - Añadir el comando export dentro del fichero de definición de entorno que estemos usando. (fichero .bashrc, oculto en carpeta home.)
-- nano /home/usuario/.bashrc
-- export PATH=$PATH:/home/usuario/ruta_a_la_carpeta_que_quiero_añadir <- al final del fichero
 
+``` bash
+nano /home/usuario/.bashrc
+```
+``` bash
+export PATH=$PATH:/home/usuario/ruta_a_la_carpeta_que_quiero_añadir <- al final del fichero
+```
+
+
+## WHICH
+``` bash
+which python
+```
+/usr/bin/python
+- Si el programa que buscamos no existe, no se mostrará ningún resultado. 
 
 ## FIND
 
@@ -51,35 +84,79 @@ find / -> búsqueda  en el directorio raiz del sistema de archivos.
 
 find . -> búsqueda en el directorio actual.
 
+¿Cuál es el nombre del archivo de configuración que se ha creado después de 2020-03-03 y es menor que 28k pero mayor que 25k?
+``` bash
+find / -iname "*.conf" -size +25k -size -28k -newermt 2020-03-03 2>/dev/null
+```
+
+``` bash
+find /etc/ -name shadow 2>/dev/null > results.txt
+```
+
+``` bash
+find /etc/ -name shadow 2> stderr.txt 1> stdout.txt
+```
+## LOCATE
+- A diferencia del comando, funciona con una base de datos local que contiene toda la información sobre los archivos y carpetas existentes. Podemos actualizar esta base de datos con el siguiente comando. 
+``` bash 
+sudo updatedb
+```
+
+``` bash
+locate *.conf
+```
+
+/etc/GeoIP.conf
+/etc/NetworkManager/NetworkManager.conf
+/etc/UPower/UPower.conf
+/etc/adduser.conf
+<SNIP>
+
 ## WC (count words)
+``` bash
 cat archivo.txt | wc -l -> me devuelve la cantidad de lineas que hay
+```
 
 ## COMPRIMIR Y DESCOMPRIMIR ARCHIVOS Y DIRECTORIOS
 Para comprimir un archivo o directorio usaremos el comando tar junto con una herramienta
 de compresión tipo gzip , bzip2  y xz .
 
 **ARCHIVOS**
-- gzip: tar czf archivo-comprimido.tar.gz nombre-del-archivo1 nombre-del-archivo2
-- bzip2: tar cjf archivo-comprimido.tar.bz2 nombre-del-archivo1 nombre-del-archivo2
-- xz: tar cJf archivo-comprimido.tar.xz nombre-del-archivo1 nombre-del-archivo2
+``` bash
+gzip: tar czf archivo-comprimido.tar.gz nombre-del-archivo1 nombre-del-archivo2
+bzip2: tar cjf archivo-comprimido.tar.bz2 nombre-del-archivo1 nombre-del-archivo2
+xz: tar cJf archivo-comprimido.tar.xz nombre-del-archivo1 nombre-del-archivo2
+```
 
 **DIRECTORIOS**
-- tar czf archivo-comprimido.tar.gz nombre-del-directorio
+``` bash
+tar czf archivo-comprimido.tar.gz nombre-del-directorio
 
+```
 **LISTAR EL CONTENIDO DE UN ARCHIVO TAR:**
-- tar tvf archivo-comprimido.tar.gz
+``` bash
+tar tvf archivo-comprimido.tar.gz
+```
 
 **DESCOMPRIMIR UN ARCHIVO TAR:**
-- tar -xvf archivo-comprimido.tar.gz
+``` bash
+tar -xvf archivo-comprimido.tar.gz
+```
 
 **DESCOMPRIMIR ARCHIVO TAR EN OTRO DIRECTORIO:**
-- tar -xvf archivo-comprimido.tar.gz -C /nombre-del-directorio/
+``` bash
+tar -xvf archivo-comprimido.tar.gz -C /nombre-del-directorio/
+```
 
 **COMPRIMIR UN ARCHIVO GZ CON GZIP:**
-- gzip -9 nombre-del-archivo1
+``` bash
+gzip -9 nombre-del-archivo1
+```
 
 **DESCOMPRIMIR UN ARCHIVO GZ CON GZIP:**
-- gzip -d archivo-comprimido.gz
+``` bash
+gzip -d archivo-comprimido.gz
+```
 
 ## ENLACES A FICHEROS Y DIRECTORIOS
 
@@ -104,7 +181,7 @@ El comando grep permite buscar, dentro de los archivos, las líneas que concuerd
 - grep "pass" archivo.txt
 - grep "pass" archivo.txt -> elimina el "pass" si encuentra la palabra en el archivo.txt
 - grep [patrón] file
-- grep -v [patrón] file 
+- grep -v [patrón] file  -> para excluir contenido
 
 ## SORT
 Ordena las lineas de los archivos de entrada a partir de opciones de ordenación.
