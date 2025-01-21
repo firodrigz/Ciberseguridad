@@ -30,6 +30,16 @@ sudo apt install chkrootkit
 sudo chkrootkit
 ```
 
+#### Lynis
+
+``` bash
+sudo apt install lynis
+```
+
+``` bash
+sudo lynis audit system
+```
+
 #### Usuarios
 GNU/Linux es un sistema multiusuario
 
