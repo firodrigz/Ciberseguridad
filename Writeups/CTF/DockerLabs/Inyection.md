@@ -123,23 +123,23 @@ Finished
 
 Ingresamos a http://172.17.0.2/index.php donde nos encontramos con el panel de login y realizamos una prueba para saber si es vulnerable a inyección SQL agregando una " ' ".
 
-![[Pasted image 20250401020938.png]]
+![](../../../attachments/Pasted-image-20250401020938.png)
 Tras recibir un error y confirmar que es vulnerable se procede a realizar pruebas básicas de SQLi
 
 En el campo de usuario se ingreso ' or 1=1-- - y en contraseña cualquier cosa, se le dió submit y la inyección fue exitosa.
 
-![[Pasted image 20250401024658.png]]
+![](../../../attachments/Pasted-image-20250401024658.png)
 **Resultados:**
 - Se identificó un usuario válido **Dylan**.
 - Se obtuvo una **contraseña** tras una inyección SQL exitosa.  
 
-![as](../../../attachments/Pastedimage20250401024728.png)
+![](../../../attachments/Pasted-image-20250401024728.png)
 
 
 
 Se probó la autenticación por SSH utilizando las credenciales obtenidas, logrando acceso al sistema.
 
-![[Screenshot from 2025-04-01 02-49-17.png]]
+![](../../../attachments/Screenshot-from-2025-04-01-02-49-17.png)
 
 Una vez dentro del sistema, se realizó un reconocimiento de permisos y binarios con **SUID**.
 
@@ -153,6 +153,6 @@ Se utilizó el método documentado en **GTFOBins** (https://gtfobins.github.io/g
 
 Tras la ejecución, se obtuvo acceso como usuario root, logrando el compromiso total del sistema.
 
-![[Pasted image 20250401025821.png]]
+![](../../../attachments/Pasted-image-20250401025821.png)
 
 **Estado del sistema: Comprometido**
