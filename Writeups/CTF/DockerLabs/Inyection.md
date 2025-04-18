@@ -133,7 +133,7 @@ En el campo de usuario se ingreso ' or 1=1-- - y en contraseña cualquier cosa, 
 - Se identificó un usuario válido **Dylan**.
 - Se obtuvo una **contraseña** tras una inyección SQL exitosa.  
 
-![[Pasted image 20250401024728.png]]
+![as](../../../attachments/Pastedimage20250401024728.png)
 
 
 
@@ -143,7 +143,7 @@ Se probó la autenticación por SSH utilizando las credenciales obtenidas, logra
 
 Una vez dentro del sistema, se realizó un reconocimiento de permisos y binarios con **SUID**.
 
-![[Screenshot from 2025-04-01 02-50-54.png]]
+![](../../../attachments/Screenshot-from-2025-04-01-02-50-54.png)
 
 Se detectó que **/usr/bin/env** tenía permisos SUID, lo que permitía su explotación para escalar privilegios. 
 
