@@ -125,8 +125,9 @@ NT AUTHORITY\NTLM Authentication       Well-known group S-1-5-64-10  Mandatory g
 Mandatory Label\Medium Mandatory Level Label            S-1-16-8192
 ```
 
+#### Net
 
-Net User
+##### User
 Nos permite mostrar una lista de todos los usuarios en un host, información sobre un usuario específico y crear o eliminar usuarios.
 
 ```cmd-session
@@ -140,4 +141,60 @@ htb-student              WDAGUtilityAccount
 The command completed successfully.
 ```
 
+##### Group
+
+Mostrará los grupos que existan en el host desde el que expidimos el comando, crearemos y eliminemos grupos, y agregará o eliminará usuarios de grupos.
+
+```cmd-session
+C:\htb> net group
+net group
+This command can be used only on a Windows Domain Controller.
+
+More help is available by typing NET HELPMSG 3515.
+
+
+C:\htb>net localgroup
+
+Aliases for \\ACADEMY-WIN11
+
+-------------------------------------------------------------------------------
+*__vmware__
+*Access Control Assistance Operators
+*Administrators
+*Backup Operators
+*Cryptographic Operators
+*Device Owners
+*Distributed COM Users
+*Event Log Readers
+*Guests
+*Hyper-V Administrators
+*IIS_IUSRS
+*Network Configuration Operators
+*Performance Log Users
+*Performance Monitor Users
+*Power Users
+*Remote Desktop Users
+*Remote Management Users
+*Replicator
+*System Managed Accounts Group
+*Users
+The command completed successfully.
+```
+
+```cmd-session
+C:\htb> net share  
+
+Share name   Resource                        Remark
+
+-------------------------------------------------------------------------------
+C$           C:\                             Default share
+IPC$                                         Remote IPC
+ADMIN$       C:\Windows                      Remote Admin
+Records      D:\Important-Files              Mounted share for records storage  
+The command completed successfully.
+```
+
+```cmd-session
+C:\htb> net view  
+```
 

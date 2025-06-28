@@ -31,6 +31,30 @@ ren demo.txt superdemo.txt -> renombrar un archivo
 
 ipconfig /all | find /i "IPV4" -> find para buscar
 
+ipconfig /displaydns -> muestra registros dns
+
+ipconfig /flushdns -> limpia registros dns
+
 dir /A:H -> ver archivos ocultos
 
 del /A:H * -> eliminar todos los archivos ocultos
+
+C:\Users\student\Desktop>where calc.exe -> buscar archivo/ejecutable
+
+
+#### Mostrar el único archivo `.txt` con tamaño mayor a 0 bytes:
+for /R %f in (*.txt) do @if %~zf NEQ 0 echo %f
+
+### ¿Qué hace este comando?
+
+- `for /R %f in (*.txt)` → Recorre todos los archivos `.txt` de forma recursiva.    
+- `%~zf` → Obtiene el tamaño en bytes del archivo.    
+- `if %~zf NEQ 0` → Filtra solo los que **no están vacíos**.    
+- `echo %f` → Muestra la **ruta completa** del archivo que tiene contenido.
+
+
+###### Consultar usuarios
+
+net user
+
+
